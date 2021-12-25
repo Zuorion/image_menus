@@ -58,7 +58,7 @@ class reload_images_menu(bpy.types.Menu):
                 o.reload_list = False
                 o.image_name = image.name
         else:
-            layout.label("No images")
+            layout.label(text="No images")
 
 class reload_image_by_name(bpy.types.Operator):
     bl_idname = "object.reload_image_by_name"
